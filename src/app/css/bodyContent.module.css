@@ -1,0 +1,172 @@
+.bodyContainer {
+    width: 100%;
+    height: auto;
+    margin-left: -8px;
+    margin-top: -8px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #181A1B;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.All_logo {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title {
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+    .bodyContainer .gallery {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+
+    }
+}
+
+/* Logo content */
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 0px;
+    row-gap: 35px;
+    justify-content: center;
+    padding-bottom: 60px;
+    padding-left: 45px;
+}
+
+.imageContainer {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+}
+
+.imageWrapper {
+    position: relative;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 2.2%;
+    left: 0;
+    width: 81%;
+    height: 0;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.imageWrapper:hover .overlay {
+    height: 60%;
+    opacity: 1;
+}
+
+/* Fashion News */
+.titleNews {
+    background-color: rgb(247, 245, 243);
+
+}
+
+#h2 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 40px;
+    margin-top: -20px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: rgb(41, 36, 30);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.textNews {
+    color: aliceblue;
+    margin-top: -40px;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(41, 36, 30);
+    margin-bottom: 0%;
+
+}
+
+.titleNews a {
+    margin-right: 5px;
+}
+
+.news {
+    color: #C0BAB2;
+    text-align: center;
+    width: 75%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(41, 36, 30);
+    justify-content: center;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0px;
+}
+
+
+.containerNews {
+    display: block;
+    padding: auto;
+
+}
+
+.containerNews a {
+    color: #C0BAB2;
+    text-decoration: none;
+}
+
+.imgNews {
+    justify-content: center;
+    text-align: center;
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.textNews {
+    margin-bottom: -2px;
+}
+
+#text {
+    overflow-wrap: break-word;
+}
+
+#text:hover {
+    color: aliceblue;
+}
